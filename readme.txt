@@ -1,4 +1,4 @@
-使用当前目录作为Git仓库，我们只需使它初始化。
+﻿1.使用当前目录作为Git仓库，我们只需使它初始化。
 git init
 该命令执行完后会在当前目录生成一个 .git 目录。
 使用我们指定目录作为Git仓库。
@@ -8,3 +8,10 @@ git init newrepo
 $ git add *.c
 $ git add README
 $ git commit -m '初始化项目版本'
+
+
+2.git diff #查看执行 git status 的结果的详细信息
+尚未缓存的改动：git diff
+查看已缓存的改动： git diff --cached
+查看已缓存的与未缓存的所有改动：git diff HEAD
+显示摘要而非整个 diff：git diff --stat
