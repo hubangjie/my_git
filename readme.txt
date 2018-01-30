@@ -16,5 +16,3 @@ $ git commit -m '初始化项目版本'
 查看已缓存的与未缓存的所有改动：git diff HEAD
 显示摘要而非整个 diff：git diff --stat
 
-3.
-4.
