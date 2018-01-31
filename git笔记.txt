@@ -36,6 +36,5 @@
 git remote add [shortname] [url]
 git remote add origin git@github.com:hubangjie/my_git.git
 git remote #查看当前的远程库  
-
-
 git remote -v  #查看远程库及每个别名的实际链接地址
+
