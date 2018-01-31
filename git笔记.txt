@@ -27,6 +27,7 @@
 11.Git 分支管理
    git branch                #列出分支基本命令
    git branch (branchname)   #创建分支命令
+   git branch -d (branchname) #删除分支命令
    git checkout (branchname) #切换分支命令
+   git checkout -b (branchname) #创建新分支并立即切换到该分支下
    git merge                 #合并分支命令
-13.master
