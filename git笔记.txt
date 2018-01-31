@@ -1,0 +1,31 @@
+1.git配置
+  (1)/etc/gitconfig 文件：系统中对所有用户都普遍适用的配置。若使用 git config 时用 --system 选项，读写的就是这个文件。（/c/Users/hbj/.gitconfig）
+  (2)~/.gitconfig 文件：用户目录下的配置文件只适用于该用户。若使用 git config 时用 --global 选项，读写的就是这个文件。 （D:\Program Files\Git\mingw64\etc\gitconfig）
+  (3)当前项目的 Git 目录中的配置文件（也就是工作目录中的 .git/config 文件）：这里的配置仅仅针对当前项目有效。每一个级别的配置都会覆盖上层的相同配置，所以 .git/config 里的配置会覆盖 /etc/gitconfig 中的同名变量。
+  eg：配置个人的用户名称和电子邮件地址：
+      $ git config --global user.name hubangjie
+      $ git config --global user.email hubangjie@outlook.com
+ 
+  优先级：git config > git config --global > git config --system。
+
+2.git config --list #查看配置信息
+3.git init  #初始化
+4.git clone <repo> <directory> #克隆到指定的目录  eg: git clone git://github.com/wangshub/wechat_jump_game（https://github.com/wangshub/wechat_jump_game）
+5.git add #将该文件添加到缓存
+6.git status #查看项目的当前状态,上次提交之后是否有修改
+7.git diff   #查看执行 git status 的结果的详细信息
+  尚未缓存的改动：git diff
+  查看已缓存的改动： git diff --cached
+  查看已缓存的与未缓存的所有改动：git diff HEAD
+  显示摘要而非整个 diff：git diff --stat
+8.git commit #缓存区内容添加到仓库中
+  git commit -m '第一次版本提交' # -m 选项以在命令行中提供提交注释。
+9.git reset HEAD #用于取消已缓存的内容
+10.git rm <file>    #从 Git 中移除某个文件  
+   git rm -f <file> #如果删除之前修改过并且已经放到暂存区域的话，则必须要用强制删除选项 -f
+   git rm --cached <file> #文件从暂存区域移除，但仍然希望保留在当前工作目录中
+11.Git 分支管理
+   git branch                #列出分支基本命令
+   git branch (branchname)   #创建分支命令
+   git checkout (branchname) #切换分支命令
+   git merge                 #合并分支命令
