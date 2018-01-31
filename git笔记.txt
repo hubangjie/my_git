@@ -31,3 +31,11 @@
    git checkout (branchname) #切换分支命令
    git checkout -b (branchname) #创建新分支并立即切换到该分支下
    git merge                 #合并分支命令
+   
+12.git & github  远程仓库配置
+git remote add [shortname] [url]
+git remote add origin git@github.com:hubangjie/my_git.git
+git remote #查看当前的远程库  
+
+
+git remote -v  #查看远程库及每个别名的实际链接地址
